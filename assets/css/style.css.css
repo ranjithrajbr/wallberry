@@ -1,0 +1,285 @@
+/*
+Theme Name: Coca
+Theme URI: http://wp.themedemo.co/coca
+Author: TrueThemes
+Author URI: http://www.truethemes.net/
+Description: Coca is a Responsive Wordpress Theme with a multitude of amazing CMS features.
+Version: 1.1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: coca
+Tags: custom-colors, featured-images, sticky-post
+*/
+
+.bg-grey {
+    background-color: #eef1f2 !important;
+}
+
+.padding-t-z {
+    padding-top: 0 !important;
+}
+.margin-l-r {
+    padding-top: 0 !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+.margin-minus {
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+
+.padding-block-custom {
+    margin-bottom: 30px !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+.padding-l-r {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+.margin-b-z {
+    margin-bottom: 0 !important;
+}
+.column_container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row.row-no-padding .column-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+.block-z-index {
+    z-index: 10;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.select-sort {
+    color: rgba(17,17,17,.67);
+    font-family: Neuton,serif;
+    font-size: 16px;
+    letter-spacing: .8px;
+    line-height: 46px;
+    margin: 0;
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    .select-sort {
+        float: none;
+    }
+}
+
+/*.cs-loader {*/
+    /*max-height: max-content;*/
+/*}*/
+
+.page-work-grid {
+    max-height: max-content;
+    overflow: hidden;
+}
+
+.select-sort select {
+    -webkit-user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: url(../images/arrow-down.png);
+    background-position: 91% center;
+    background-repeat: no-repeat;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+    height: 46px;
+    outline: 0;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 35px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 254px;
+    vertical-align: top;
+}
+
+.tab-link.current{
+    display: none;
+}
+
+ul.tabs {
+    list-style: none;
+    padding: 0 15px;
+}
+.tabs .tab-link {
+    padding: 0;
+    -webkit-transition: color .2s ease,border .2s ease;
+    -o-transition: color .2s ease,border .2s ease;
+    transition: color .2s ease,border .2s ease;
+    border-bottom: 2px solid #383c50;
+    border-radius: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #383c50;
+    font-family: "Woodford Bourne",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tabs .tab-link:hover {
+    border-bottom: 2px solid rgba(56,60,80,.8);
+    background-color: transparent;
+    color: rgba(56,60,80,.8);
+}
+
+.prev-post{
+float: left;
+}
+
+.next-post{
+float: right;
+}
+
+.tab-content{
+    display: none ;
+}
+
+.tab-content.current{
+    display: block;
+}
+
+.blog-content .tab-content.current{
+    display: flex;
+}
+
+.tabs-blog {
+    padding: 0;
+}
+
+.tabs-blog ul {
+    width: 100%;
+    padding: 0;
+}
+
+.tabs-blog .tabs .tab-link {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.25;
+    cursor: pointer;
+}
+
+.woocommerce form .form-row .required {
+    visibility: visible;
+}
+
+.cs-column-container .column-inner {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row-no-padding .inner {
+    margin-left: 0;
+    margin-right: 0;
+}
+@media (max-width: 767px) {
+    .column_container {
+        width: 100%;
+    }
+}
+
+.cs-half-bg .wpb_column {
+    z-index: 10;
+}
+
+.custom_1520604504536 {
+    background-image: url(../images/banner-1578c9.jpg?id=3974) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+.wpb_single_image.align_right {
+    text-align: right;
+}
+
+.classic_grid_hide {
+    top: 100% !important;
+    display: none !important;
+    transform: translate3d(-799.016px, 340px, 0px) !important;
+}
+.testv {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 1025px){
+    .cs-header__nav {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .cs-banner h1.cs-banner__title {
+        font-size: 39px;
+    }
+
+    .cs-counter__title, .cs-filter-content__title, .cs-heading__title, .cs-picture .cs-picture__info h3.cs-picture__title, .cs-process__title, .cs-product__info .cs-product__title, .woocommerce-billing-fields h3, .woocommerce-additional-fields h3, #order_review_heading {
+        font-size: 28px;
+    }
+
+    .cs-filter-content__list .cs-filter-content__item, .cs-filter-top__list .cs-filter-top__item, .cs-picture .cs-picture__desc {
+        font-size: 14px;
+    }
+
+    .block-timeline-images .cs-portfolio__link--timeimg {
+        flex-wrap: wrap;
+    }
+    .block-timeline-images .cs-portfolio__col {
+        width: 25%;
+    }
+    .block-timeline-images .cs-portfolio__col--6 {
+        width: 73%;
+    }
+    .block-timeline-images .cs-portfolio__col--7 {
+        width: 73%;
+        margin-left: auto;
+        padding: 0 10px 0 23px;
+        text-align: left;
+    }
+    .block-timeline-images .cs-portfolio__img-wrapp--sm {
+        flex-wrap: wrap;
+    }
+    .block-timeline-images .cs-portfolio__img-wrapp--sm .cs-portfolio__img-item {
+        width: 100%;
+        margin: 0 0 10px;
+        min-height: 225px;
+    }
+}

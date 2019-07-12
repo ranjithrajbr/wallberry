@@ -1,0 +1,9 @@
+/*!
+ * Before & After Slider
+ *
+ * http://mynameisvince.com/baslider/
+ * Copyright (c) 2013 Vince Gonzalez;
+ *
+ * Licensed under the MIT license
+ */
+!function(e){e.fn.beforeAfter=function(){var t,n,s,i=this,a=i.width()+"px";i.find(".resize-img").css("width",a),t=i.find(".handle"),n=i.find(".resize"),s=i,t.on("mousedown.ba-events touchstart.ba-events",function(i){t.addClass("ba-draggable"),n.addClass("ba-resizable");var a=i.pageX?i.pageX:i.originalEvent.touches[0].pageX,f=t.outerWidth(),o=t.offset().left+f-a,l=s.offset().left,d=s.outerWidth();minLeft=l,maxLeft=l+d-f,t.parents().on("mousemove.ba-events touchmove.ba-events",function(t){var n=t.pageX?t.pageX:t.originalEvent.touches[0].pageX;leftValue=n+o-f,leftValue<minLeft?leftValue=minLeft:leftValue>maxLeft&&(leftValue=maxLeft),widthValue=100*(leftValue+f/2-l)/d+"%",e(".ba-draggable").css("left",widthValue),e(".ba-resizable").css("width",widthValue)}).on("mouseup.ba-events touchend.ba-events touchcancel.ba-events",function(){t.removeClass("ba-draggable"),n.removeClass("ba-resizable"),e(this).off(".ba-events")})}),i.find(".button").on("click",function(t){e(this).hasClass("prev")?(i.find(".resize").css({width:"0",transition:"width 1s ease-in"}),i.find(".handle").css({left:"0",transition:"left 1s ease-in"})):(i.find(".resize").css({width:"100%",transition:"width 1s ease-in"}),i.find(".handle").css({left:"100%",transition:"left 1s ease-in"})),setTimeout(function(){i.find(".resize").css("transition","none"),i.find(".handle").css("transition","none")},1e3),t.preventDefault()}),e(window).resize(function(){var e=i.width()+"px";i.find(".resize-img").css("width",e)})}}(jQuery);
